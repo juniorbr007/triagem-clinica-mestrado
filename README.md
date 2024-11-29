@@ -31,7 +31,7 @@ A solução foi desenvolvida utilizando **Angular** para o frontend, **Django** 
 
 ## Imagens do Sistema
 
-![Tela Principal](https://www.imagemhost.com.br/image/zCszE)
+![Descrição da imagem](https://drive.google.com/uc?id=12duO4kv7c9WQp1OIMLARdODdIQgkUpnU)
 
 ## Instruções para Execução
 
