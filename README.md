@@ -31,7 +31,7 @@ A solução foi desenvolvida utilizando **Angular** para o frontend, **Django** 
 
 ## Imagens do Sistema
 
-![Tela Principal](https://link-da-imagem-do-sistema.com/screenshot.png)
+![Tela Principal](https://www.imagemhost.com.br/image/zCszE)
 
 ## Instruções para Execução
 
@@ -73,23 +73,3 @@ Abra um pull request.
 
 ## Licença
 Este projeto é licenciado sob a MIT License - veja o arquivo LICENSE para mais detalhes.
-
-``` bash
-
-#### Como adicionar a imagem do sistema:
-- Salve uma captura de tela ou imagem do sistema, por exemplo, **screenshot.png**.
-- Faça o upload dessa imagem para o repositório ou forneça um link externo para a imagem.
-- No README, use a tag `![Tela Principal](caminho-da-imagem)` para exibir a imagem.
-
-### 3. **Comitar e Enviar o README**
-
-Após criar o README.md, adicione e envie para o repositório com os seguintes comandos no terminal do VSCode:
-
-```bash
-git add README.md
-git commit -m "Adiciona README com detalhes do sistema"
-git push
-```
-
-
-
