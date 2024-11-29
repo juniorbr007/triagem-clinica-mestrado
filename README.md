@@ -29,6 +29,34 @@ A solução foi desenvolvida utilizando **Angular** para o frontend, **Django** 
 3. **Análise de Sintomas**: O TensorFlow.js é utilizado para realizar a análise dos sintomas e gerar uma possível classificação do caso clínico.
 4. **Armazenamento e Autenticação**: Os dados são armazenados no Firebase e os usuários se autenticam utilizando o Firebase Authentication.
 
+## Integração com TensorFlow.js
+Estamos utilizando o TensorFlow.js para realizar inferências no navegador, permitindo que o sistema de triagem clínica forneça diagnósticos baseados nas respostas do usuário em tempo real. O modelo é carregado e usado diretamente para prever a condição do paciente com base em seus sintomas.
+### Exemplo de Código:
+
+```javascript
+import * as tf from '@tensorflow/tfjs';
+
+// Carregar o modelo
+async function carregarModelo() {
+  const modelo = await tf.loadLayersModel('https://meuservidor.com/modelo/model.json');
+  return modelo;
+}
+
+// Realizar uma previsão
+async function realizarPrevisao(dados) {
+  const modelo = await carregarModelo();
+  const tensorEntrada = tf.tensor2d([dados]);
+  const previsao = modelo.predict(tensorEntrada);
+  previsao.print();  // Exibe o resultado da previsão
+}
+
+// Exemplo de dados (sintomas do paciente)
+const dadosPaciente = [1, 0, 1, 0, 1];  // Dados simulados
+realizarPrevisao(dadosPaciente);
+
+```
+
+
 ## Imagens do Sistema
 
 ![Descrição da imagem](https://drive.google.com/uc?id=12duO4kv7c9WQp1OIMLARdODdIQgkUpnU)
