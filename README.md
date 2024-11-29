@@ -43,6 +43,10 @@ Para clonar o repositório, use o comando:
 git clone https://github.com/SEU_USUARIO/triagem-clinica.git
 ```
 
-## 2. Configuração do Frontend (Angular)
+### 2. Configuração do Frontend (Angular)
+```bash
+cd frontend
+npm install
+```
 
 
