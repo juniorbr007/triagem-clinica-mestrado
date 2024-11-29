@@ -1,27 +1,43 @@
-# TriagemClinica
+# Sistema Especialista de Triagem Clínica
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.
+## Descrição
 
-## Development server
+Este projeto visa o desenvolvimento de um **sistema especialista interpretável para triagem clínica**, com o objetivo de otimizar o atendimento no Sistema Único de Saúde (SUS). O sistema foi projetado para ajudar médicos generalistas a realizar encaminhamentos mais precisos com base em sintomas reportados pelos pacientes.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+A solução foi desenvolvida utilizando **Angular** para o frontend, **Django** para o backend, **TensorFlow.js** para análise de dados e integração com o **Firebase** para autenticação e armazenamento.
 
-## Code scaffolding
+## Funcionalidades
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Triagem Clínica**: O sistema coleta informações do paciente por meio de um formulário baseado em questionários.
+- **Análise de Sintomas**: Utiliza um modelo de aprendizado de máquina para analisar os sintomas e fornecer um diagnóstico.
+- **Interface de Usuário**: Interface simples e responsiva, projetada em Angular, permitindo interação fácil e eficiente.
+- **Autenticação e Armazenamento**: Firebase é utilizado para autenticação e armazenamento seguro de dados.
 
-## Build
+## Tecnologias Utilizadas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Frontend**: Angular 15
+- **Backend**: Django 4.x (Python)
+- **Modelos de Machine Learning**: TensorFlow.js
+- **Banco de Dados**: Firebase Firestore
+- **Autenticação**: Firebase Authentication
+- **Hospedagem**: Firebase Hosting
 
-## Running unit tests
+## Fluxo de Dados
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **Entrada de Dados**: O paciente preenche um formulário com seus sintomas através da interface em Angular.
+2. **Processamento**: O backend em Django recebe os dados, processa-os e retorna uma resposta ao frontend.
+3. **Análise de Sintomas**: O TensorFlow.js é utilizado para realizar a análise dos sintomas e gerar uma possível classificação do caso clínico.
+4. **Armazenamento e Autenticação**: Os dados são armazenados no Firebase e os usuários se autenticam utilizando o Firebase Authentication.
 
-## Running end-to-end tests
+## Imagens do Sistema
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![Tela Principal](https://link-da-imagem-do-sistema.com/screenshot.png)
 
-## Further help
+## Instruções para Execução
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### 1. Clonando o Repositório
+
+Para clonar o repositório, use o comando:
+
+```bash
+git clone https://github.com/SEU_USUARIO/triagem-clinica.git
