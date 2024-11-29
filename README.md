@@ -49,4 +49,47 @@ cd frontend
 npm install
 ```
 
+**Para rodar o frontend localmente, use:**
+```bash
+ng serve
+```
+O frontend estará disponível em http://localhost:4200.
+
+### 3. Configuração do Backend (Django)
+No diretório do backend, instale as dependências:
+
+``` bash
+cd backend
+pip install -r requirements.txt
+```
+
+## Como Contribuir
+Fork o repositório.
+Crie uma branch para sua funcionalidade (git checkout -b feature/nome-da-funcionalidade).
+Faça o commit das suas mudanças (git commit -am 'Adiciona nova funcionalidade').
+Envie para o repositório remoto (git push origin feature/nome-da-funcionalidade).
+Abra um pull request.
+
+
+## Licença
+Este projeto é licenciado sob a MIT License - veja o arquivo LICENSE para mais detalhes.
+
+``` bash
+
+#### Como adicionar a imagem do sistema:
+- Salve uma captura de tela ou imagem do sistema, por exemplo, **screenshot.png**.
+- Faça o upload dessa imagem para o repositório ou forneça um link externo para a imagem.
+- No README, use a tag `![Tela Principal](caminho-da-imagem)` para exibir a imagem.
+
+### 3. **Comitar e Enviar o README**
+
+Após criar o README.md, adicione e envie para o repositório com os seguintes comandos no terminal do VSCode:
+
+```bash
+git add README.md
+git commit -m "Adiciona README com detalhes do sistema"
+git push
+```
+
+
 
