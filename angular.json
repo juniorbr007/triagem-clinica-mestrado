@@ -25,9 +25,17 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+
+            "allowedCommonJsDependencies": [
+              "@tensorflow/tfjs",
+              "@tensorflow/tfjs-core",
+              "@tensorflow/tfjs-layers",
+              "long"
+            ]
           },
           "configurations": {
             "production": {
@@ -87,6 +95,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -94,5 +103,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "da693099-1ad3-484c-96e3-684b1537c572"
   }
 }
